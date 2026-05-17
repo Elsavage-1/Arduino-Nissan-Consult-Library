@@ -1,17 +1,71 @@
-Nissan Consult Arduino Library v1.0
-June 12th 2011
+# Nissan Consult Arduino Library
 
-A library for interfacing your Arduino to a Nissan Consult port
-using a serial consult adapter.  You can buy these Serial adapters
-on Ebay or from China for around $15.  You can also build one yourself
-following the schematics here: http://www.plmsdevelopments.com/diy_consult.htm
+Fork of https://github.com/Crim/Arduino-Nissan-Consult-Library work.
 
-This URL also links to PDFs containing the consult protocol, so feel free to 
-extend this code to be able to do considerably more, just make sure you post 
-your updated code back to the project!
+This updates it with documentation gathered off the internet archive for reference due to the dead links. Prodimently the reference PDFs were saved and updated into this repo for reference.
 
-Portions of this code inspired by Patrick Cole and his consult empeg code
-found here: http://www.supremez.com/empeg-consult/
+## Overview
 
-All code licensed under GPL V2.
-Use this code as you see fit!  
+This project provides Arduino code to communicate with Nissan ECUs via the Consult protocol. You can purchase pre-built serial adapters on eBay or from China for around $15, or build your own using the schematics and documentation provided.
+
+## Getting Started
+
+### Hardware
+
+You'll need a Nissan Consult serial adapter. 
+
+1. **Buy Pre-built** - Available on eBay or from Chinese suppliers (~$15)
+2. **Build Your Own** - See [DIY Consult Interface](#diy-consult-interface) below
+
+### Installation
+
+Include the library files in your Arduino project and import them in your sketch.
+
+## Documentation
+
+### DIY Consult Interface
+
+If you prefer to build your own adapter, detailed information was orginally available here:  
+
+[PLMS Developments - DIY Consult](documentation\plmsdevelopments.com-diy_consult.htm)
+
+original website link : http://www.plmsdevelopments.com/diy_consult.htm
+
+This resource includes:
+- Complete schematic diagrams
+- Protocol documentation
+- Component lists
+
+### Protocol & Reference Documentation
+
+The following PDFs are available in the `documentation/` folder:
+
+- **Protocol PDF** - Updated to Issue 6 (Consult protocol specification)
+- **Generic Nissan ECU Data Register Table** - Common register definitions across Nissan models
+- **Consult Interface Schematic Diagram** - Rev 4 (hardware design)
+- **1999 A32 Maxima Register Details (OBDII)** - Model-specific register mapping
+
+*Thanks to Randy for contributing the Maxima register details.*
+
+## Extending This Library
+
+This code is designed to be extended. The Consult protocol documentation in the `documentation/` folder provides enough detail to add additional functionality beyond the current implementation. If you improve or extend this code, please consider contributing back to the project!
+
+## Credits
+
+- Portions of this code were inspired by Patrick Cole's consult empeg implementation:  
+  [Supreme Z - Empeg Consult](documentation\supremez-com-empeg-consult.html)
+
+  original website : http://www.supremez.com/empeg-consult/
+  
+
+## License
+
+All code is licensed under **GPL V2**.
+
+Use this code as you see fit!
+
+## Disclaimer
+
+This information is provided "as is" for personal (non-profit) use only. While we're happy to share this information, we do not have resources available to help debug or test individual builds. If you lack the skills or equipment to complete the project, please consider purchasing a pre-built adapter unit instead.
+
